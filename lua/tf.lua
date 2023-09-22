@@ -1,6 +1,6 @@
-local tf = {}
+local M = {}
 
-tf.commands = {
+M.commands = {
   TerraformFmt = function()
     -- Format the current Terraform file.
     vim.cmd('!terraform fmt')
@@ -18,7 +18,7 @@ tf.commands = {
   end,
 }
 
-tf.keymaps = {
+M.keymaps = {
   ['n <leader>tf'] = ':TerraformFmt<CR>',
 }
 
@@ -27,4 +27,4 @@ tf.keymaps = {
 --   vim.cmd('call plugin#terraform-fmt#TerraformFmtOnSave()')
 -- end
 
-return tf
+return M
