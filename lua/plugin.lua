@@ -22,9 +22,9 @@ plugin.keymaps = {
   ['n <leader>tf'] = ':TerraformFmt<CR>',
 }
 
-plugin.setup = function()
-  -- Enable Terraform fmt on save.
-  vim.cmd('call plugin#terraform-fmt#TerraformFmtOnSave()')
-end
+-- plugin.setup = function()
+--   -- Enable Terraform fmt on save.
+--   vim.cmd('call plugin#terraform-fmt#TerraformFmtOnSave()')
+-- end
 
 return plugin
